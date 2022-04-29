@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--checkbox-->
+    <label><input type="checkbox" name="" id="one" onchange="fun1()">Checkbox</label>
+
+    <br>
+    <br>
+    <!--radiobutton-->
+    <input type="radio" name = "r1" value="5" >0
+    <input type="radio" name = "r1" value="53">1
+    <input type="radio" name = "r1" value="535">2
+    <button onclick="fun2()">Check</button>
+
+    <br>
+    <br>
+    <!--select-->
+    <select name="" id="mySelect" onchange="fun3()">
+        <option value="">apple</option>
+        <option value="">orange</option>
+        <option value="">pineapple</option>
+        <option value="">banana</option>
+    </select>
+    <br>
+    <br>
+    <!--range-->
+    <input type="range" min="0" max="100" step="2" oninput="fun4()" id="r2">
+    <p id="two"></p>
+    <input type="text" id="i1">
+    <div id="test"></div>
+
+    <br>
+    <br>
+
+    <!--css generator-->
+    <div class="block1">
+         <p>Top left
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="ttl" value="0">
+        </p>
+        <p>Top right
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="ttr" value="0">
+        </p>
+        <p>Bottom right
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="tbr" value="0">
+        </p>
+        <p>Bottom left
+            <input type="range" id="rbl" min="0" max="100" value="0" oninput="fun5()">
+            <input type="text" id="tbl" value="0">
+        </p>
+    </div>
+   
+    <div id="block"></div>
+    <br>
+    <br>
+
+    <!--drop-down menu-->
+    <div id="nav">
+        <div class="menu-item">
+            Menu 1
+            <div class="submenu">
+                Submenu
+            </div></div>
+        <div class="menu-item">
+            Menu 2
+            <div class="submenu">
+                Submenu
+            </div></div>
+        <div class="menu-item">
+            Menu 3
+            <div class="submenu">
+                Submenu
+            </div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--tabs-->
+
+    <div id="tabs">
+        <div class="tab whiteborder" >Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tabContent">1</div>
+        <div class="tabContent">2</div>
+        <div class="tabContent">3</div>
+    </div>
+    <br>
+    <br>
+    <!--modal window-->
+
+    <button id="myBtn">Open modal</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal window</p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!--animation-->
+    <button onclick="myMove()">Animation</button>
+    <div id="myContainer">
+        <div id="myAnimation"></div>
+    </div>
+
+    <br>
+    <br>
+    <!--carousel-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            
+            <img src="1.jpg" style ="width: 100%;" alt="">
+            <div class="text">First</div>
+        </div>
+        <div class="mySlides fade">
+            
+            <img src="2.jpg" style ="width: 100%;" alt="">
+            <div class="text">Second</div>
+        </div>
+        <div class="mySlides fade">
+            
+            <img src="3.jpg" style ="width: 100%;" alt="">
+            <div class="text">Third</div>
+        </div>
+        <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a  class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+    </div>
+    
+    <br>
+    <br>
+    <!--filter-->
+
+    <input type="text" onkeyup="filterfun()" id="myInput" placeholder="Search the book">
+    <ul id="myUl">
+        <li><a href="" class="header">A</a></li>
+
+            <li><a href=" ">Anton </a></li>
+            <li><a href=" ">Andrei </a></li>
+
+        <li><a href="" class="header">B</a></li>
+            <li><a href=" ">Bogdan </a></li>
+            <li><a href=" ">Bill </a></li>
+
+        <li><a href="" class="header">C</a></li>
+            <li><a href=" ">Cid </a></li>
+            <li><a href=" ">Cull </a></li>
+
+        <li><a href="" class="header">D</a></li>
+            <li><a href=" ">Danil </a></li>
+            <li><a href=" ">Devid </a></li>
+
+    </ul>
+
+    <br>
+    <br>
+    <!--calculator-->
+    <p>Number 1: <input type="text"  id="n1"> </p>
+    <p>Number 2: <input type="text"  id="n2"> </p>
+
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="dev()">/</button>
+
+    <hr>
+    <p id="out">Answer: </p>
+
+    <br>
+    <br>
+    <!--api-->
+    <div id="map" style ="width: 1200px; height: 400px;">
+
+
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDztDSEzp0vCVY97MM6wmDa9EM7Z0BksyI&callback=initMap"></script>
+
+
+    <br>
+    <br>
+    <!--modal img-->
+    <img src="3.jpg" alt="animal" id="myImg" width="350" height="200">
+    <div id="myModal2" class="modal">
+        <span class="close" onclick="document.getElementById('myModal2').style.display = 'none'">&times;</span>
+        <img class="modal-content2" id="img01">
+        <div id="caption"></div>
+    </div>
+
+
+    <!--progress-bar-->
+    <div id="myprogress">
+        <div id="mybar">
+            <div id="label">10%
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <button onclick="move()">Click</button>
+
+
+    <br>
+    <br>
+    <!--popup-->
+    <div class="popup" onclick="popup()">Click me
+        <span class="popuptext" id="myPopup">Lorem ipsum dolor sit amet consectetur.</span>
+    </div>
+    
+    <br>
+    <br>
+    <!--accordion-->
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptatibus.</p>
+    </div>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptatibus.</p>
+    </div>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptatibus.</p>
+    </div>
+    
+
+
+    <noscript>Enable JavaScript!</noscript>
+    <script src="script.js"></script>
+</body>
+</html>
